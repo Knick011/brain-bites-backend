@@ -1,11 +1,1810 @@
-// Desktop/brain-bites/backend/data/intro_psych_questions.js
+// Desktop/brain-bites/backend/data/questions.js
 
-// This file contains 150 unique introduction to psychology questions
-// with IDs ranging from 151 to 300.
+// This file contains 100 unique fun fact and brain teaser questions.
 // Each question includes a unique ID, the question text, four options,
 // the correct answer, and an explanation.
 
 const questions = [
+  {
+    id: 1,
+    question: "What is the only mammal capable of true flight?",
+    options: {
+      A: "Flying squirrel",
+      B: "Bat",
+      C: "Squirrel",
+      D: "Ostrich"
+    },
+    correctAnswer: "B",
+    explanation: "Bats are the only mammals that can truly fly."
+  },
+  {
+    id: 2,
+    question: "Which animal is known to have the longest migration route?",
+    options: {
+      A: "Humpback whale",
+      B: "Arctic tern",
+      C: "Caribou",
+      D: "Monarch butterfly"
+    },
+    correctAnswer: "B",
+    explanation: "The Arctic tern migrates from the Arctic to the Antarctic and back each year."
+  },
+  {
+    id: 3,
+    question: "What gets wetter as it dries?",
+    options: {
+      A: "Sponge",
+      B: "Towel",
+      C: "Raincoat",
+      D: "River"
+    },
+    correctAnswer: "B",
+    explanation: "A towel gets wet as it dries you off."
+  },
+  {
+    id: 4,
+    question: "Which planet is known as the Red Planet?",
+    options: {
+      A: "Saturn",
+      B: "Jupiter",
+      C: "Mars",
+      D: "Venus"
+    },
+    correctAnswer: "C",
+    explanation: "Mars is often called the Red Planet due to its reddish appearance."
+  },
+  {
+    id: 5,
+    question: "What is the largest living species of lizard?",
+    options: {
+      A: "Monitor lizard",
+      B: "Iguana",
+      C: "Gila monster",
+      D: "Komodo dragon"
+    },
+    correctAnswer: "D",
+    explanation: "The Komodo dragon is the largest living species of lizard."
+  },
+  {
+    id: 6,
+    question: "I speak without a mouth and hear without ears. I have no body, but I come alive with the wind. What am I?",
+    options: {
+      A: "Shadow",
+      B: "Echo",
+      C: "Reflection",
+      D: "Whisper"
+    },
+    correctAnswer: "B",
+    explanation: "An echo is sound reflected back to the listener."
+  },
+  {
+    id: 7,
+    question: "Which bird is known for its ability to solve complex puzzles and use tools?",
+    options: {
+      A: "Eagle",
+      B: "Sparrow",
+      C: "Crow",
+      D: "Parrot"
+    },
+    correctAnswer: "C",
+    explanation: "Crows are highly intelligent birds known for their problem-solving skills and tool use."
+  },
+  {
+    id: 8,
+    question: "What has keys but can't open locks?",
+    options: {
+      A: "Map",
+      B: "Piano",
+      C: "Keyboard",
+      D: "Computer"
+    },
+    correctAnswer: "B",
+    explanation: "A piano has keys but cannot open locks."
+  },
+  {
+    id: 9,
+    question: "Which animal is the fastest land animal in the world?",
+    options: {
+      A: "Lion",
+      B: "Cheetah",
+      C: "Pronghorn antelope",
+      D: "Gazelle"
+    },
+    correctAnswer: "B",
+    explanation: "The cheetah can reach speeds up to 60-70 mph."
+  },
+  {
+    id: 10,
+    question: "What comes once in a minute, twice in a moment, but never in a thousand years?",
+    options: {
+      A: "The letter 'N'",
+      B: "The letter 'O'",
+      C: "The letter 'M'",
+      D: "The number 1"
+    },
+    correctAnswer: "C",
+    explanation: "The letter 'M' appears once in 'minute', twice in 'moment', and not at all in 'thousand years'."
+  },
+  {
+    id: 11,
+    question: "Which marine creature is known for its ability to regenerate lost limbs?",
+    options: {
+      A: "Shark",
+      B: "Octopus",
+      C: "Dolphin",
+      D: "Starfish"
+    },
+    correctAnswer: "D",
+    explanation: "Starfish can regenerate lost arms."
+  },
+  {
+    id: 12,
+    question: "What is the largest species of shark currently living?",
+    options: {
+      A: "Tiger shark",
+      B: "Whale shark",
+      C: "Great white shark",
+      D: "Hammerhead shark"
+    },
+    correctAnswer: "B",
+    explanation: "The whale shark is the largest living species of shark."
+  },
+  {
+    id: 13,
+    question: "The more you take, the more you leave behind. What am I?",
+    options: {
+      A: "Memories",
+      B: "Footsteps",
+      C: "Shadows",
+      D: "Time"
+    },
+    correctAnswer: "B",
+    explanation: "The riddle refers to footsteps."
+  },
+  {
+    id: 14,
+    question: "Which insect is known for its impressive architectural skills, creating intricate hives?",
+    options: {
+      A: "Termite",
+      B: "Ant",
+      C: "Bee",
+      D: "Wasp"
+    },
+    correctAnswer: "C",
+    explanation: "Bees construct complex hives with hexagonal cells."
+  },
+  {
+    id: 15,
+    question: "What has a head, a tail, is brown, and has no legs?",
+    options: {
+      A: "A snake",
+      B: "A comet",
+      C: "A penny",
+      D: "A lizard"
+    },
+    correctAnswer: "C",
+    explanation: "The riddle describes a penny."
+  },
+  {
+    id: 16,
+    question: "Which animal is capable of changing its color for camouflage and communication?",
+    options: {
+      A: "Frog",
+      B: "Snake",
+      C: "Chameleon",
+      D: "Parrot"
+    },
+    correctAnswer: "C",
+    explanation: "Chameleons can change color to blend into their surroundings."
+  },
+  {
+    id: 17,
+    question: "What is the only bird known to fly backwards?",
+    options: {
+      A: "Penguin",
+      B: "Hummingbird",
+      C: "Sparrow",
+      D: "Eagle"
+    },
+    correctAnswer: "B",
+    explanation: "Hummingbirds have a unique wing structure that allows them to fly backwards."
+  },
+  {
+    id: 18,
+    question: "If you have me, you want to share me. If you share me, you don't have me. What am I?",
+    options: {
+      A: "Happiness",
+      B: "Secret",
+      C: "Love",
+      D: "Money"
+    },
+    correctAnswer: "B",
+    explanation: "A secret loses its secrecy once shared."
+  },
+  {
+    id: 19,
+    question: "Which mammal is known to have one of the most powerful bites?",
+    options: {
+      A: "Lion",
+      B: "Hippopotamus",
+      C: "Grizzly bear",
+      D: "Tiger"
+    },
+    correctAnswer: "B",
+    explanation: "Hippopotamuses have extremely powerful jaws."
+  },
+  {
+    id: 20,
+    question: "What can travel around the world while staying in a corner?",
+    options: {
+      A: "Shadow",
+      B: "Stamp",
+      C: "Sunlight",
+      D: "Satellite"
+    },
+    correctAnswer: "B",
+    explanation: "A postage stamp stays in the corner of an envelope while traveling globally."
+  },
+  {
+    id: 21,
+    question: "Which creature is known as the 'master of disguise' in the ocean due to its ability to mimic its surroundings?",
+    options: {
+      A: "Jellyfish",
+      B: "Cuttlefish",
+      C: "Dolphin",
+      D: "Shark"
+    },
+    correctAnswer: "B",
+    explanation: "Cuttlefish can rapidly change their skin appearance."
+  },
+  {
+    id: 22,
+    question: "Which animal has the longest pregnancy, lasting up to 22 months?",
+    options: {
+      A: "Rhinoceros",
+      B: "Whale",
+      C: "Giraffe",
+      D: "Elephant"
+    },
+    correctAnswer: "D",
+    explanation: "Elephants have one of the longest gestation periods."
+  },
+  {
+    id: 23,
+    question: "What begins with an 'e' and contains only one letter?",
+    options: {
+      A: "Eye",
+      B: "Envelope",
+      C: "Earth",
+      D: "Eel"
+    },
+    correctAnswer: "B",
+    explanation: "An envelope begins with 'e' and typically contains a letter."
+  },
+  {
+    id: 24,
+    question: "Which animal is known for its unique black and white striped pattern that helps confuse predators?",
+    options: {
+      A: "Skunk",
+      B: "Zebra",
+      C: "Panda",
+      D: "Orca"
+    },
+    correctAnswer: "B",
+    explanation: "Zebras have distinctive stripes that can confuse predators."
+  },
+  {
+    id: 25,
+    question: "Which amphibian can survive freezing temperatures by partially freezing its body?",
+    options: {
+      A: "Bullfrog",
+      B: "Wood frog",
+      C: "Poison dart frog",
+      D: "Tree frog"
+    },
+    correctAnswer: "B",
+    explanation: "The wood frog can tolerate freezing temperatures."
+  },
+  {
+    id: 26,
+    question: "What has cities, but no houses; forests, but no trees; and water, but no fish?",
+    options: {
+      A: "Riddle",
+      B: "Map",
+      C: "Dream",
+      D: "Painting"
+    },
+    correctAnswer: "B",
+    explanation: "A map represents these elements symbolically."
+  },
+  {
+    id: 27,
+    question: "Which animal can sleep for up to 20 hours a day?",
+    options: {
+      A: "Lion",
+      B: "Koala",
+      C: "Cat",
+      D: "Sloth"
+    },
+    correctAnswer: "B",
+    explanation: "Koalas are known for their long hours of sleep."
+  },
+  {
+    id: 28,
+    question: "Which class of animals typically has a three-chambered heart?",
+    options: {
+      A: "Mammals",
+      B: "Birds",
+      C: "Amphibians",
+      D: "Fish"
+    },
+    correctAnswer: "C",
+    explanation: "Most amphibians have a three-chambered heart."
+  },
+  {
+    id: 29,
+    question: "I am taken from a mine and shut in a wooden case, from which I am never released, and yet I am used by almost every person. What am I?",
+    options: {
+      A: "Diamond",
+      B: "Pencil lead",
+      C: "Gold",
+      D: "Coal"
+    },
+    correctAnswer: "B",
+    explanation: "Pencil lead (graphite) is mined and encased in wood."
+  },
+  {
+    id: 30,
+    question: "Which sea creature has three hearts?",
+    options: {
+      A: "Jellyfish",
+      B: "Octopus",
+      C: "Squid",
+      D: "Shark"
+    },
+    correctAnswer: "B",
+    explanation: "Octopuses have three hearts: two pump blood to the gills and one circulates it to the body."
+  },
+  {
+    id: 31,
+    question: "What has a heart but no other organs?",
+    options: {
+      A: "Deck of cards",
+      B: "Clock",
+      C: "Human",
+      D: "Robot"
+    },
+    correctAnswer: "A",
+    explanation: "A deck of cards contains a suit called hearts."
+  },
+  {
+    id: 32,
+    question: "What can fill a room but takes up no space?",
+    options: {
+      A: "Water",
+      B: "Sound",
+      C: "Air",
+      D: "Light"
+    },
+    correctAnswer: "D",
+    explanation: "Light fills a room without occupying physical space."
+  },
+  {
+    id: 33,
+    question: "I have keys but no locks. I have space but no rooms. You can enter, but you can't go outside. What am I?",
+    options: {
+      A: "House",
+      B: "Keyboard",
+      C: "Map",
+      D: "Computer"
+    },
+    correctAnswer: "B",
+    explanation: "A keyboard has keys and a space bar."
+  },
+  {
+    id: 34,
+    question: "What gets broken without being held?",
+    options: {
+      A: "Glass",
+      B: "Seal",
+      C: "Promise",
+      D: "Heart"
+    },
+    correctAnswer: "C",
+    explanation: "A promise can be broken without any physical interaction."
+  },
+  {
+    id: 35,
+    question: "What invention lets you look right through a wall?",
+    options: {
+      A: "Door",
+      B: "Mirror",
+      C: "Window",
+      D: "Magnifying glass"
+    },
+    correctAnswer: "C",
+    explanation: "A window allows you to see through a wall."
+  },
+  {
+    id: 36,
+    question: "What has one eye but cannot see?",
+    options: {
+      A: "Cyclone",
+      B: "Needle",
+      C: "Hurricane",
+      D: "Storm"
+    },
+    correctAnswer: "B",
+    explanation: "A needle has an eye for threading but cannot see."
+  },
+  {
+    id: 37,
+    question: "I am not alive, but I grow; I don't have lungs, but I need air; I don't have a mouth, but water kills me. What am I?",
+    options: {
+      A: "Wind",
+      B: "Plant",
+      C: "Fire",
+      D: "Rust"
+    },
+    correctAnswer: "C",
+    explanation: "Fire grows, needs air, and is extinguished by water."
+  },
+  {
+    id: 38,
+    question: "What belongs to you but is used more by others?",
+    options: {
+      A: "Your phone",
+      B: "Your name",
+      C: "Your clothes",
+      D: "Your car"
+    },
+    correctAnswer: "B",
+    explanation: "Your name is used more frequently by others than by you."
+  },
+  {
+    id: 39,
+    question: "What can run but never walks?",
+    options: {
+      A: "Car",
+      B: "River",
+      C: "Clock",
+      D: "Time"
+    },
+    correctAnswer: "B",
+    explanation: "A river runs continuously without walking."
+  },
+  {
+    id: 40,
+    question: "What gets sharper the more you use it?",
+    options: {
+      A: "Pencil",
+      B: "Shoe",
+      C: "Mind",
+      D: "Knife"
+    },
+    correctAnswer: "C",
+    explanation: "Your mind improves and becomes sharper with use."
+  },
+  {
+    id: 41,
+    question: "What has many teeth but cannot bite?",
+    options: {
+      A: "Fork",
+      B: "Saw",
+      C: "Comb",
+      D: "Zipper"
+    },
+    correctAnswer: "C",
+    explanation: "A comb has teeth but cannot bite."
+  },
+  {
+    id: 42,
+    question: "What goes up but never comes down?",
+    options: {
+      A: "Helium",
+      B: "Age",
+      C: "Balloon",
+      D: "Smoke"
+    },
+    correctAnswer: "B",
+    explanation: "Your age only increases over time."
+  },
+  {
+    id: 43,
+    question: "What has a face and two hands but no arms or legs?",
+    options: {
+      A: "Book",
+      B: "Clock",
+      C: "Coin",
+      D: "Mirror"
+    },
+    correctAnswer: "B",
+    explanation: "A clock has a face and hands but no limbs."
+  },
+  {
+    id: 44,
+    question: "What has a bottom at the top?",
+    options: {
+      A: "Tree",
+      B: "Leg",
+      C: "Hat",
+      D: "River"
+    },
+    correctAnswer: "B",
+    explanation: "This riddle plays on words: a leg’s 'bottom' (buttocks) is humorously referenced."
+  },
+  {
+    id: 45,
+    question: "What comes down but never goes up?",
+    options: {
+      A: "Sun",
+      B: "Rain",
+      C: "Temperature",
+      D: "Ball"
+    },
+    correctAnswer: "B",
+    explanation: "Rain falls and does not come back up."
+  },
+  {
+    id: 46,
+    question: "I’m tall when I’m young, and I’m short when I’m old. What am I?",
+    options: {
+      A: "Person",
+      B: "Candle",
+      C: "Tree",
+      D: "Mountain"
+    },
+    correctAnswer: "B",
+    explanation: "A candle burns down over time, becoming shorter."
+  },
+  {
+    id: 47,
+    question: "What can you catch but not throw?",
+    options: {
+      A: "Idea",
+      B: "Cold",
+      C: "Fish",
+      D: "Ball"
+    },
+    correctAnswer: "B",
+    explanation: "You can catch a cold, but you can't physically throw it."
+  },
+  {
+    id: 48,
+    question: "What has to be broken before you can use it?",
+    options: {
+      A: "Nut",
+      B: "Lock",
+      C: "Egg",
+      D: "Seal"
+    },
+    correctAnswer: "C",
+    explanation: "An egg must be cracked open before it can be used."
+  },
+  {
+    id: 49,
+    question: "What has one head, one foot, and four legs?",
+    options: {
+      A: "Chair",
+      B: "Bed",
+      C: "Table",
+      D: "Sofa"
+    },
+    correctAnswer: "B",
+    explanation: "A bed has a headboard, a footboard, and four legs."
+  },
+  {
+    id: 50,
+    question: "What has words but never speaks?",
+    options: {
+      A: "Radio",
+      B: "Picture",
+      C: "Television",
+      D: "Book"
+    },
+    correctAnswer: "D",
+    explanation: "A book contains words but does not speak."
+  },
+  {
+    id: 51,
+    question: "What is always in front of you but can’t be seen?",
+    options: {
+      A: "Mirror",
+      B: "Future",
+      C: "Air",
+      D: "Shadow"
+    },
+    correctAnswer: "B",
+    explanation: "The future is unseen yet always ahead."
+  },
+  {
+    id: 52,
+    question: "What begins with T, ends with T, and has T in it?",
+    options: {
+      A: "Truck",
+      B: "Tent",
+      C: "Teapot",
+      D: "T-shirt"
+    },
+    correctAnswer: "C",
+    explanation: "A teapot starts and ends with the letter 'T' and holds tea."
+  },
+  {
+    id: 53,
+    question: "What is so fragile that saying its name breaks it?",
+    options: {
+      A: "Glass",
+      B: "Silence",
+      C: "Ice",
+      D: "Promise"
+    },
+    correctAnswer: "B",
+    explanation: "Silence is broken when you speak."
+  },
+  {
+    id: 54,
+    question: "What can you hold in your left hand but not in your right hand?",
+    options: {
+      A: "A book",
+      B: "A pen",
+      C: "Your right hand",
+      D: "A phone"
+    },
+    correctAnswer: "C",
+    explanation: "You cannot hold your right hand with your right hand."
+  },
+  {
+    id: 55,
+    question: "What gets bigger the more you take away from it?",
+    options: {
+      A: "A tree",
+      B: "A mountain",
+      C: "A hole",
+      D: "A balloon"
+    },
+    correctAnswer: "C",
+    explanation: "Removing material from a hole makes it larger."
+  },
+  {
+    id: 56,
+    question: "What has a ring but no finger?",
+    options: {
+      A: "Doorbell",
+      B: "Boxing ring",
+      C: "Telephone",
+      D: "Planet Saturn"
+    },
+    correctAnswer: "C",
+    explanation: "A telephone rings but doesn't have fingers."
+  },
+  {
+    id: 57,
+    question: "What has a neck but no head?",
+    options: {
+      A: "Shirt",
+      B: "Bottle",
+      C: "Guitar",
+      D: "Scarf"
+    },
+    correctAnswer: "B",
+    explanation: "A bottle has a neck but no head."
+  },
+  {
+    id: 58,
+    question: "What kind of room has no doors or windows?",
+    options: {
+      A: "Classroom",
+      B: "Mushroom",
+      C: "Bathroom",
+      D: "Ballroom"
+    },
+    correctAnswer: "B",
+    explanation: "Mushroom is a play on words that sounds like a room."
+  },
+  {
+    id: 59,
+    question: "What can run but never walks, has a mouth but never talks?",
+    options: {
+      A: "Car",
+      B: "Shadow",
+      C: "River",
+      D: "Clock"
+    },
+    correctAnswer: "C",
+    explanation: "A river runs and has a mouth but does not speak."
+  },
+  {
+    id: 60,
+    question: "What begins with an E, ends with an E, but only contains one letter?",
+    options: {
+      A: "Edge",
+      B: "Envelope",
+      C: "Eagle",
+      D: "Example"
+    },
+    correctAnswer: "B",
+    explanation: "An envelope fits the description."
+  },
+  {
+    id: 61,
+    question: "What has hands but cannot clap?",
+    options: {
+      A: "Book",
+      B: "Robot",
+      C: "Clock",
+      D: "Mannequin"
+    },
+    correctAnswer: "C",
+    explanation: "A clock's hands cannot clap."
+  },
+  {
+    id: 62,
+    question: "What has a thumb and four fingers but is not alive?",
+    options: {
+      A: "Fist",
+      B: "Mitten",
+      C: "Sock",
+      D: "Glove"
+    },
+    correctAnswer: "D",
+    explanation: "A glove has a thumb and four finger slots but is not living."
+  },
+  {
+    id: 63,
+    question: "What flies without wings?",
+    options: {
+      A: "Kite",
+      B: "Bird",
+      C: "Time",
+      D: "Airplane"
+    },
+    correctAnswer: "C",
+    explanation: "Time flies, at least metaphorically."
+  },
+  {
+    id: 64,
+    question: "What starts with a 'P', ends with an 'E', and has thousands of letters?",
+    options: {
+      A: "Pen",
+      B: "Post office",
+      C: "Pineapple",
+      D: "Phone"
+    },
+    correctAnswer: "B",
+    explanation: "A post office handles thousands of letters."
+  },
+  {
+    id: 65,
+    question: "What kind of tree can you carry in your hand?",
+    options: {
+      A: "Maple",
+      B: "Birch",
+      C: "Palm",
+      D: "Oak"
+    },
+    correctAnswer: "C",
+    explanation: "The word 'palm' refers to both a type of tree and the inside of your hand."
+  },
+  {
+    id: 66,
+    question: "What goes through cities and fields but never moves?",
+    options: {
+      A: "Train",
+      B: "Wind",
+      C: "Road",
+      D: "River"
+    },
+    correctAnswer: "C",
+    explanation: "A road stretches across areas without moving."
+  },
+  {
+    id: 67,
+    question: "I have branches, but no fruit, trunk, or leaves. What am I?",
+    options: {
+      A: "Company",
+      B: "Bank",
+      C: "Government",
+      D: "River"
+    },
+    correctAnswer: "B",
+    explanation: "A bank has branches, though not in the botanical sense."
+  },
+  {
+    id: 68,
+    question: "What has a bed but never sleeps?",
+    options: {
+      A: "Car",
+      B: "Mountain",
+      C: "Book",
+      D: "River"
+    },
+    correctAnswer: "D",
+    explanation: "A river has a bed but never sleeps."
+  },
+  {
+    id: 69,
+    question: "What can you keep after giving it to someone?",
+    options: {
+      A: "Time",
+      B: "Your word",
+      C: "Love",
+      D: "Money"
+    },
+    correctAnswer: "B",
+    explanation: "Your word remains with you even after you give it."
+  },
+  {
+    id: 70,
+    question: "What has legs but doesn't walk?",
+    options: {
+      A: "Chair",
+      B: "Cloud",
+      C: "Table",
+      D: "Snake"
+    },
+    correctAnswer: "C",
+    explanation: "A table has legs but cannot move on its own."
+  },
+  {
+    id: 71,
+    question: "What has a face but no eyes?",
+    options: {
+      A: "Dice",
+      B: "Book",
+      C: "Clock",
+      D: "Coin"
+    },
+    correctAnswer: "D",
+    explanation: "A coin has a face (heads) but no eyes."
+  },
+  {
+    id: 72,
+    question: "What word is spelled incorrectly in every single dictionary?",
+    options: {
+      A: "Typo",
+      B: "Misspelled",
+      C: "Incorrectly",
+      D: "Wrong"
+    },
+    correctAnswer: "C",
+    explanation: "The word 'incorrectly' is always spelled as 'incorrectly' in dictionaries."
+  },
+  {
+    id: 73,
+    question: "I’m light as a feather, yet the strongest man can’t hold me for more than 5 minutes. What am I?",
+    options: {
+      A: "Air",
+      B: "Fire",
+      C: "Breath",
+      D: "Water"
+    },
+    correctAnswer: "C",
+    explanation: "Breath is light, yet no one can hold it for very long."
+  },
+  {
+    id: 74,
+    question: "What runs around the whole yard without moving?",
+    options: {
+      A: "Dog",
+      B: "Fence",
+      C: "Grass",
+      D: "Shadow"
+    },
+    correctAnswer: "B",
+    explanation: "A fence encloses a yard but doesn't move."
+  },
+  {
+    id: 75,
+    question: "What has holes but still holds water?",
+    options: {
+      A: "Bucket",
+      B: "Sponge",
+      C: "Strainer",
+      D: "Net"
+    },
+    correctAnswer: "B",
+    explanation: "A sponge is porous yet absorbs water."
+  },
+  {
+    id: 76,
+    question: "What has a head and a tail but no body?",
+    options: {
+      A: "Snake",
+      B: "Wind",
+      C: "Coin",
+      D: "Shadow"
+    },
+    correctAnswer: "C",
+    explanation: "A coin has a head and a tail but no body."
+  },
+  {
+    id: 77,
+    question: "What comes once in a year, twice in a week, but never in a day?",
+    options: {
+      A: "The letter Y",
+      B: "The letter E",
+      C: "The letter R",
+      D: "The letter A"
+    },
+    correctAnswer: "B",
+    explanation: "The letter E appears once in 'year', twice in 'week', and not in 'day'."
+  },
+  {
+    id: 78,
+    question: "What can you break, even if you never pick it up or touch it?",
+    options: {
+      A: "Heart",
+      B: "Promise",
+      C: "Glass",
+      D: "Wind"
+    },
+    correctAnswer: "B",
+    explanation: "A promise can be broken without any physical interaction."
+  },
+  {
+    id: 79,
+    question: "What has rivers with no water, forests with no trees, and cities with no buildings?",
+    options: {
+      A: "Drawing",
+      B: "Puzzle",
+      C: "Map",
+      D: "Desert"
+    },
+    correctAnswer: "C",
+    explanation: "A map represents these features symbolically."
+  },
+  {
+    id: 80,
+    question: "What kind of band never plays music?",
+    options: {
+      A: "Marching band",
+      B: "Rubber band",
+      C: "Rock band",
+      D: "Jazz band"
+    },
+    correctAnswer: "B",
+    explanation: "A rubber band is not a musical band."
+  },
+  {
+    id: 81,
+    question: "What has an eye but cannot see, and is also a type of storm?",
+    options: {
+      A: "Needle",
+      B: "Tornado",
+      C: "Hurricane",
+      D: "Cyclone"
+    },
+    correctAnswer: "C",
+    explanation: "A hurricane has an eye, but it cannot see."
+  },
+  {
+    id: 82,
+    question: "What goes through cities and fields but never moves?",
+    options: {
+      A: "Train",
+      B: "Road",
+      C: "Wind",
+      D: "River"
+    },
+    correctAnswer: "B",
+    explanation: "A road stretches across areas without moving."
+  },
+  {
+    id: 83,
+    question: "I have branches, but no fruit, trunk, or leaves. What am I?",
+    options: {
+      A: "Government",
+      B: "Company",
+      C: "Bank",
+      D: "River"
+    },
+    correctAnswer: "C",
+    explanation: "A bank has branches, though not in the botanical sense."
+  },
+  {
+    id: 84,
+    question: "What has a bed but never sleeps?",
+    options: {
+      A: "Book",
+      B: "Car",
+      C: "River",
+      D: "Mountain"
+    },
+    correctAnswer: "C",
+    explanation: "A river has a bed but never sleeps."
+  },
+  {
+    id: 85,
+    question: "What can you keep after giving it to someone?",
+    options: {
+      A: "Time",
+      B: "Your word",
+      C: "Love",
+      D: "Money"
+    },
+    correctAnswer: "B",
+    explanation: "Your word remains with you even after you give it."
+  },
+  {
+    id: 86,
+    question: "What has legs but doesn't walk?",
+    options: {
+      A: "Snake",
+      B: "Chair",
+      C: "Table",
+      D: "Cloud"
+    },
+    correctAnswer: "C",
+    explanation: "A table has legs but cannot move on its own."
+  },
+  {
+    id: 87,
+    question: "What flies without wings?",
+    options: {
+      A: "Kite",
+      B: "Time",
+      C: "Bird",
+      D: "Airplane"
+    },
+    correctAnswer: "B",
+    explanation: "Time flies, at least metaphorically."
+  },
+  {
+    id: 88,
+    question: "Which animal is known for having the longest lifespan in captivity?",
+    options: {
+      A: "Elephant",
+      B: "Tortoise",
+      C: "Parrot",
+      D: "Dog"
+    },
+    correctAnswer: "B",
+    explanation: "Some tortoises can live over 100 years in captivity."
+  },
+  {
+    id: 89,
+    question: "What is the fastest marine animal?",
+    options: {
+      A: "Marlin",
+      B: "Shark",
+      C: "Sailfish",
+      D: "Dolphin"
+    },
+    correctAnswer: "C",
+    explanation: "The sailfish is considered the fastest marine animal."
+  },
+  {
+    id: 90,
+    question: "Which bird is known for its elaborate courtship dance?",
+    options: {
+      A: "Peacock",
+      B: "Flamingo",
+      C: "Sage grouse",
+      D: "Penguin"
+    },
+    correctAnswer: "C",
+    explanation: "The sage grouse is famous for its intricate mating dance."
+  },
+  {
+    id: 91,
+    question: "Which mammal is known to have the most powerful sense of smell?",
+    options: {
+      A: "Bear",
+      B: "Bloodhound",
+      C: "Dog",
+      D: "Elephant"
+    },
+    correctAnswer: "B",
+    explanation: "Bloodhounds have an extraordinarily keen sense of smell."
+  },
+  {
+    id: 92,
+    question: "Which insect can lift objects many times its own weight?",
+    options: {
+      A: "Beetle",
+      B: "Ant",
+      C: "Fly",
+      D: "Bee"
+    },
+    correctAnswer: "B",
+    explanation: "Ants can carry several times their body weight."
+  },
+  {
+    id: 93,
+    question: "Which animal has the highest brain-to-body mass ratio?",
+    options: {
+      A: "Owl",
+      B: "Shrew",
+      C: "Bat",
+      D: "Squirrel"
+    },
+    correctAnswer: "B",
+    explanation: "Shrews have one of the highest brain-to-body mass ratios among mammals."
+  },
+  {
+    id: 94,
+    question: "What is the tallest animal on Earth?",
+    options: {
+      A: "Elephant",
+      B: "Camel",
+      C: "Giraffe",
+      D: "Ostrich"
+    },
+    correctAnswer: "C",
+    explanation: "Giraffes are the tallest land animals."
+  },
+  {
+    id: 95,
+    question: "What is the largest animal in the world?",
+    options: {
+      A: "African elephant",
+      B: "Great white shark",
+      C: "Blue whale",
+      D: "Giraffe"
+    },
+    correctAnswer: "C",
+    explanation: "The blue whale is the largest animal known to have ever existed."
+  },
+  {
+    id: 96,
+    question: "Which animal is known for its ability to mimic human speech?",
+    options: {
+      A: "Peacock",
+      B: "Crow",
+      C: "Parrot",
+      D: "Sparrow"
+    },
+    correctAnswer: "C",
+    explanation: "Parrots are famous for their ability to mimic human speech."
+  },
+  {
+    id: 97,
+    question: "Which animal is known to be the largest rodent in the world?",
+    options: {
+      A: "Beaver",
+      B: "Hamster",
+      C: "Capybara",
+      D: "Squirrel"
+    },
+    correctAnswer: "C",
+    explanation: "The capybara is the largest rodent in the world."
+  },
+  {
+    id: 98,
+    question: "What is the smallest country in the world by land area?",
+    options: {
+      A: "Nauru",
+      B: "Vatican City",
+      C: "Monaco",
+      D: "San Marino"
+    },
+    correctAnswer: "B",
+    explanation: "Vatican City is the smallest country in the world by area."
+  },
+  {
+    id: 99,
+    question: "What is the hottest planet in our solar system?",
+    options: {
+      A: "Mercury",
+      B: "Mars",
+      C: "Jupiter",
+      D: "Venus"
+    },
+    correctAnswer: "D",
+    explanation: "Venus is the hottest planet due to its thick, heat-trapping atmosphere."
+  },
+  {
+    id: 100,
+    question: "What word becomes shorter when you add two letters to it?",
+    options: {
+      A: "Small",
+      B: "Short",
+      C: "Tiny",
+      D: "Brief"
+    },
+    correctAnswer: "B",
+    explanation: "Adding 'er' to 'short' literally makes it 'shorter'."
+  },
+  {
+    id: 101,
+    question: "What has roots that nobody sees, is taller than trees, and whose head is in the clouds?",
+    options: {
+      A: "Skyscraper",
+      B: "Mountain",
+      C: "Forest",
+      D: "River"
+    },
+    correctAnswer: "B",
+    explanation: "This classic riddle describes a mountain."
+  },
+  {
+    id: 102,
+    question: "What is always coming but never arrives?",
+    options: {
+      A: "Tomorrow",
+      B: "Future",
+      C: "Next week",
+      D: "Time"
+    },
+    correctAnswer: "A",
+    explanation: "Tomorrow is perpetually in the future."
+  },
+  {
+    id: 103,
+    question: "What goes up and down but doesn't move?",
+    options: {
+      A: "Yo-yo",
+      B: "Stairs",
+      C: "Temperature",
+      D: "Elevator"
+    },
+    correctAnswer: "B",
+    explanation: "Stairs go up and down but remain stationary."
+  },
+  {
+    id: 104,
+    question: "I shave every day, but my beard stays the same. Who am I?",
+    options: {
+      A: "Barber",
+      B: "Actor",
+      C: "Librarian",
+      D: "Teacher"
+    },
+    correctAnswer: "A",
+    explanation: "A barber shaves others every day, yet his own beard remains unchanged."
+  },
+  {
+    id: 105,
+    question: "What is black when it's clean and white when it's dirty?",
+    options: {
+      A: "Paper",
+      B: "Chalkboard",
+      C: "Wall",
+      D: "Mirror"
+    },
+    correctAnswer: "B",
+    explanation: "A chalkboard is black when clean, and becomes white when covered in chalk dust."
+  },
+  {
+    id: 106,
+    question: "What is in the middle of March and April?",
+    options: {
+      A: "A",
+      B: "R",
+      C: "C",
+      D: "I"
+    },
+    correctAnswer: "B",
+    explanation: "The middle letter of both 'March' and 'April' is R."
+  },
+  {
+    id: 107,
+    question: "What word, when pronounced wrong, is right?",
+    options: {
+      A: "Incorrect",
+      B: "Right",
+      C: "Wrong",
+      D: "Proper"
+    },
+    correctAnswer: "C",
+    explanation: "When you say the word 'wrong' incorrectly, it sounds like 'right'."
+  },
+  {
+    id: 108,
+    question: "What can you serve but not eat?",
+    options: {
+      A: "A sandwich",
+      B: "A tennis ball",
+      C: "A hotdog",
+      D: "A cookie"
+    },
+    correctAnswer: "B",
+    explanation: "In sports, you serve a tennis ball, which isn’t edible."
+  },
+  {
+    id: 109,
+    question: "What has a spine but no bones?",
+    options: {
+      A: "Cactus",
+      B: "Book",
+      C: "Snake",
+      D: "Fish"
+    },
+    correctAnswer: "B",
+    explanation: "A book has a spine—the binding edge—but no bones."
+  },
+  {
+    id: 110,
+    question: "What has ears but cannot hear?",
+    options: {
+      A: "Rock",
+      B: "Door",
+      C: "Corn",
+      D: "Bat"
+    },
+    correctAnswer: "C",
+    explanation: "Corn has 'ears' but cannot actually hear."
+  },
+  {
+    id: 111,
+    question: "What can you hold without using your hands?",
+    options: {
+      A: "Water",
+      B: "Light",
+      C: "Breath",
+      D: "Time"
+    },
+    correctAnswer: "C",
+    explanation: "You can hold your breath, but you cannot physically grasp it."
+  },
+  {
+    id: 112,
+    question: "Which planet spins on its side, giving it extreme seasonal variations?",
+    options: {
+      A: "Neptune",
+      B: "Uranus",
+      C: "Mars",
+      D: "Saturn"
+    },
+    correctAnswer: "B",
+    explanation: "Uranus rotates on its side, leading to unusual seasonal changes."
+  },
+  {
+    id: 113,
+    question: "Which animal is known for its unique ability to sleep standing up?",
+    options: {
+      A: "Cow",
+      B: "Sheep",
+      C: "Horse",
+      D: "Goat"
+    },
+    correctAnswer: "C",
+    explanation: "Horses are known to sleep while standing up."
+  },
+  {
+    id: 114,
+    question: "What is the largest internal organ in the human body?",
+    options: {
+      A: "Heart",
+      B: "Brain",
+      C: "Liver",
+      D: "Lung"
+    },
+    correctAnswer: "C",
+    explanation: "The liver is the largest internal organ responsible for many vital functions."
+  },
+  {
+    id: 115,
+    question: "Which animal is known as the 'Ship of the Desert'?",
+    options: {
+      A: "Camel",
+      B: "Horse",
+      C: "Llama",
+      D: "Elephant"
+    },
+    correctAnswer: "A",
+    explanation: "Camels are known as the 'Ship of the Desert' due to their ability to travel long distances in arid regions."
+  },
+  {
+    id: 116,
+    question: "What is the only fruit that has its seeds on the outside?",
+    options: {
+      A: "Apple",
+      B: "Orange",
+      C: "Strawberry",
+      D: "Banana"
+    },
+    correctAnswer: "C",
+    explanation: "Strawberries are unique in that their seeds are on the outside."
+  },
+  {
+    id: 117,
+    question: "What is the world's most widely spoken language by native speakers?",
+    options: {
+      A: "English",
+      B: "Hindi",
+      C: "Spanish",
+      D: "Mandarin Chinese"
+    },
+    correctAnswer: "D",
+    explanation: "Mandarin Chinese has the highest number of native speakers in the world."
+  },
+  {
+    id: 118,
+    question: "What is the hardest natural substance on Earth?",
+    options: {
+      A: "Graphite",
+      B: "Quartz",
+      C: "Diamond",
+      D: "Steel"
+    },
+    correctAnswer: "C",
+    explanation: "Diamond is the hardest naturally occurring material known."
+  },
+  {
+    id: 119,
+    question: "What is the smallest bone in the human body?",
+    options: {
+      A: "Femur",
+      B: "Stapes",
+      C: "Tibia",
+      D: "Ulna"
+    },
+    correctAnswer: "B",
+    explanation: "The stapes, located in the middle ear, is the smallest bone in the human body."
+  },
+  {
+    id: 120,
+    question: "Which element has the chemical symbol 'O'?",
+    options: {
+      A: "Osmium",
+      B: "Oxygen",
+      C: "Gold",
+      D: "Oganesson"
+    },
+    correctAnswer: "B",
+    explanation: "Oxygen is represented by the symbol 'O' and is essential for life."
+  },
+  {
+    id: 121,
+    question: "Which planet is famous for its prominent ring system?",
+    options: {
+      A: "Uranus",
+      B: "Saturn",
+      C: "Neptune",
+      D: "Mars"
+    },
+    correctAnswer: "B",
+    explanation: "Saturn is renowned for its stunning rings."
+  },
+  {
+    id: 122,
+    question: "Which ocean is the largest on Earth?",
+    options: {
+      A: "Atlantic Ocean",
+      B: "Indian Ocean",
+      C: "Arctic Ocean",
+      D: "Pacific Ocean"
+    },
+    correctAnswer: "D",
+    explanation: "The Pacific Ocean is the largest ocean on the planet."
+  },
+  {
+    id: 123,
+    question: "What is the main gas found in Earth's atmosphere?",
+    options: {
+      A: "Oxygen",
+      B: "Carbon Dioxide",
+      C: "Hydrogen",
+      D: "Nitrogen"
+    },
+    correctAnswer: "D",
+    explanation: "Nitrogen makes up about 78% of the Earth's atmosphere."
+  },
+  {
+    id: 124,
+    question: "Which animal is known for having one of the longest lifespans, sometimes exceeding 150 years?",
+    options: {
+      A: "Blue whale",
+      B: "Elephant",
+      C: "Tortoise",
+      D: "Parrot"
+    },
+    correctAnswer: "C",
+    explanation: "Certain species of tortoise are known to live for over 150 years."
+  },
+  {
+    id: 125,
+    question: "Which country is home to the Great Pyramid of Giza?",
+    options: {
+      A: "Mexico",
+      B: "Egypt",
+      C: "Peru",
+      D: "India"
+    },
+    correctAnswer: "B",
+    explanation: "The Great Pyramid of Giza is located in Egypt."
+  },
+  {
+    id: 126,
+    question: "What is the largest mammal on Earth?",
+    options: {
+      A: "African elephant",
+      B: "Blue whale",
+      C: "Giraffe",
+      D: "Hippopotamus"
+    },
+    correctAnswer: "B",
+    explanation: "The blue whale is the largest animal known to have ever existed."
+  },
+  {
+    id: 127,
+    question: "Which metal is liquid at room temperature?",
+    options: {
+      A: "Lead",
+      B: "Mercury",
+      C: "Gallium",
+      D: "Sodium"
+    },
+    correctAnswer: "B",
+    explanation: "Mercury is the only metal that is liquid at room temperature."
+  },
+  {
+    id: 128,
+    question: "What is the primary ingredient in traditional Japanese miso soup?",
+    options: {
+      A: "Seaweed",
+      B: "Tofu",
+      C: "Soybean paste",
+      D: "Mushrooms"
+    },
+    correctAnswer: "C",
+    explanation: "Soybean paste (miso) is the key ingredient in miso soup."
+  },
+  {
+    id: 129,
+    question: "Which country is credited with inventing paper?",
+    options: {
+      A: "Egypt",
+      B: "Greece",
+      C: "India",
+      D: "China"
+    },
+    correctAnswer: "D",
+    explanation: "Paper was invented in ancient China."
+  },
+  {
+    id: 130,
+    question: "What is the largest planet in our solar system?",
+    options: {
+      A: "Saturn",
+      B: "Uranus",
+      C: "Jupiter",
+      D: "Neptune"
+    },
+    correctAnswer: "C",
+    explanation: "Jupiter is the largest planet in our solar system."
+  },
+  {
+    id: 131,
+    question: "Which instrument typically has 88 keys?",
+    options: {
+      A: "Guitar",
+      B: "Piano",
+      C: "Organ",
+      D: "Violin"
+    },
+    correctAnswer: "B",
+    explanation: "A standard piano has 88 keys."
+  },
+  {
+    id: 132,
+    question: "What is the chemical formula for water?",
+    options: {
+      A: "CO2",
+      B: "NaCl",
+      C: "O2",
+      D: "H2O"
+    },
+    correctAnswer: "D",
+    explanation: "Water is composed of two hydrogen atoms and one oxygen atom (H2O)."
+  },
+  {
+    id: 133,
+    question: "Which bird is often associated with delivering babies in folklore?",
+    options: {
+      A: "Owl",
+      B: "Stork",
+      C: "Sparrow",
+      D: "Crow"
+    },
+    correctAnswer: "B",
+    explanation: "Folklore often depicts storks as deliverers of babies."
+  },
+  {
+    id: 134,
+    question: "Which insect is renowned for building intricate hives and producing honey?",
+    options: {
+      A: "Ant",
+      B: "Butterfly",
+      C: "Bee",
+      D: "Wasp"
+    },
+    correctAnswer: "C",
+    explanation: "Bees build complex hives and produce honey."
+  },
+  {
+    id: 135,
+    question: "Which organ in the human body is responsible for pumping blood?",
+    options: {
+      A: "Kidney",
+      B: "Liver",
+      C: "Brain",
+      D: "Heart"
+    },
+    correctAnswer: "D",
+    explanation: "The heart pumps blood throughout the body."
+  },
+  {
+    id: 136,
+    question: "Which element is represented by the symbol 'Fe'?",
+    options: {
+      A: "Gold",
+      B: "Lead",
+      C: "Iron",
+      D: "Fluorine"
+    },
+    correctAnswer: "C",
+    explanation: "The chemical symbol 'Fe' stands for iron."
+  },
+  {
+    id: 137,
+    question: "What process do plants use to convert sunlight into energy?",
+    options: {
+      A: "Respiration",
+      B: "Photosynthesis",
+      C: "Transpiration",
+      D: "Digestion"
+    },
+    correctAnswer: "B",
+    explanation: "Photosynthesis allows plants to convert sunlight into energy."
+  },
+  {
+    id: 138,
+    question: "Which gas do plants primarily absorb from the atmosphere?",
+    options: {
+      A: "Helium",
+      B: "Carbon dioxide",
+      C: "Nitrogen",
+      D: "Oxygen"
+    },
+    correctAnswer: "B",
+    explanation: "Plants absorb carbon dioxide during photosynthesis."
+  },
+  {
+    id: 139,
+    question: "At what temperature does water freeze in degrees Celsius?",
+    options: {
+      A: "32°C",
+      B: "-32°C",
+      C: "0°C",
+      D: "100°C"
+    },
+    correctAnswer: "C",
+    explanation: "Water freezes at 0°C under standard conditions."
+  },
+  {
+    id: 140,
+    question: "Which continent has the most countries?",
+    options: {
+      A: "Asia",
+      B: "Africa",
+      C: "Europe",
+      D: "South America"
+    },
+    correctAnswer: "B",
+    explanation: "Africa has 54 recognized countries, the most of any continent."
+  },
+  {
+    id: 141,
+    question: "Which organ is primarily responsible for filtering blood in the human body?",
+    options: {
+      A: "Liver",
+      B: "Lung",
+      C: "Kidney",
+      D: "Heart"
+    },
+    correctAnswer: "C",
+    explanation: "The kidneys filter waste from the blood."
+  },
+  {
+    id: 142,
+    question: "What is the largest hot desert in the world?",
+    options: {
+      A: "Arabian Desert",
+      B: "Kalahari Desert",
+      C: "Gobi Desert",
+      D: "Sahara Desert"
+    },
+    correctAnswer: "D",
+    explanation: "The Sahara is the largest hot desert on Earth."
+  },
+  {
+    id: 143,
+    question: "Which sea creature is notorious for its venomous sting and long tentacles?",
+    options: {
+      A: "Starfish",
+      B: "Octopus",
+      C: "Box jellyfish",
+      D: "Squid"
+    },
+    correctAnswer: "C",
+    explanation: "The box jellyfish is known for its dangerous, venomous sting."
+  },
+  {
+    id: 144,
+    question: "Which metal is most commonly used in coinage?",
+    options: {
+      A: "Gold",
+      B: "Copper",
+      C: "Silver",
+      D: "Iron"
+    },
+    correctAnswer: "B",
+    explanation: "Copper is widely used for making coins."
+  },
+  {
+    id: 145,
+    question: "What is the primary language spoken in Brazil?",
+    options: {
+      A: "Spanish",
+      B: "Portuguese",
+      C: "French",
+      D: "English"
+    },
+    correctAnswer: "B",
+    explanation: "Brazil's official language is Portuguese."
+  },
+  {
+    id: 146,
+    question: "Which animal, native to China, is famous for its distinctive black and white markings?",
+    options: {
+      A: "Red panda",
+      B: "Giant panda",
+      C: "Leopard",
+      D: "Koala"
+    },
+    correctAnswer: "B",
+    explanation: "The giant panda is known for its unique black and white fur."
+  },
+  {
+    id: 147,
+    question: "Which fruit is often called the 'king of fruits' in Southeast Asia?",
+    options: {
+      A: "Pineapple",
+      B: "Mango",
+      C: "Papaya",
+      D: "Durian"
+    },
+    correctAnswer: "D",
+    explanation: "Durian is renowned in Southeast Asia for its strong odor and distinctive taste."
+  },
+  {
+    id: 148,
+    question: "What is the capital city of Japan?",
+    options: {
+      A: "Kyoto",
+      B: "Osaka",
+      C: "Tokyo",
+      D: "Hiroshima"
+    },
+    correctAnswer: "C",
+    explanation: "Tokyo is the capital of Japan."
+  },
+  {
+    id: 149,
+    question: "Which famous scientist developed the theory of relativity?",
+    options: {
+      A: "Isaac Newton",
+      B: "Galileo Galilei",
+      C: "Nikola Tesla",
+      D: "Albert Einstein"
+    },
+    correctAnswer: "D",
+    explanation: "Albert Einstein is renowned for formulating the theory of relativity."
+  },
+  {
+    id: 150,
+    question: "Which planet is often called the 'Morning Star' or 'Evening Star'?",
+    options: {
+      A: "Mars",
+      B: "Venus",
+      C: "Mercury",
+      D: "Saturn"
+    },
+    correctAnswer: "B",
+    explanation: "Venus is frequently visible at dawn or dusk, earning its nicknames."
+  },
   {
     id: 151,
     question: "What is the scientific study of behavior and mental processes?",
@@ -1806,6 +3605,7 @@ const questions = [
     correctAnswer: "A",
     explanation: "An introductory psychology course aims to provide an overview of the scientific study of behavior and mental processes."
   }
+
 ];
 
 module.exports = questions;
